@@ -1,0 +1,16 @@
+<tabs>
+    <tab
+        icon="@drawable/ic_messages"
+        id="@+id/tab_inBoxMessages"
+        title="InBox"/>
+
+    <tab
+        icon="@drawable/ic_friends"
+        id="@+id/tab_friends"
+        title="Friends"/>
+
+    <tab
+        icon="@drawable/ic_profile"
+        id="@+id/tab_profile"
+        title="Profile"/>
+</tabs>

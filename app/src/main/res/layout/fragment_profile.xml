@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/centerPoint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/fragment_profile_userPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="30dip"
+            app:riv_oval="true"/>
+
+        <ProgressBar
+            android:id="@+id/fragment_profile_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/centerPoint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:id="@+id/fragment_profile_cameraPicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/centerPoint"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:background="@drawable/friend_request_background"
+        android:elevation="4dp"
+        android:src="@mipmap/ic_camera"/>
+
+    <ImageButton
+        android:id="@+id/fragment_profile_imagePicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/centerPoint"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:background="@drawable/friend_request_background"
+        android:elevation="4dp"
+        android:src="@mipmap/ic_picture"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_imagePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="User Name"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_userName"
+        android:layout_centerHorizontal="true"
+        android:text="User email"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/fragment_profile_signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_userEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/friend_request_background"
+        android:elevation="4dp"
+        android:text="sign out"
+        android:textColor="@android:color/white"/>
+
+
+    <com.roughike.bottombar.BottomBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"/>
+
+</RelativeLayout>

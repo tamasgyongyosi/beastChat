@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "hu.itware.beastchat"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile('io.socket:socket.io-client:0.8.3') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.4'
+    compile 'com.roughike:bottom-bar:2.1.1'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

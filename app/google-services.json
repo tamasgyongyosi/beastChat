@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "215849880095",
+    "firebase_url": "https://beastchat-3b2c7.firebaseio.com",
+    "project_id": "beastchat-3b2c7",
+    "storage_bucket": "beastchat-3b2c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215849880095:android:573dc2cd89741beb",
+        "android_client_info": {
+          "package_name": "hu.itware.beastchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215849880095-5odhi33kf2tkkt4sad8bbnusocq538g7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.itware.beastchat",
+            "certificate_hash": "7AC614DCF6260DFA730B93571C2DA7E738262A78"
+          }
+        },
+        {
+          "client_id": "215849880095-f7he7ult50iuq7nvl9u3idf1k76jhhst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrW3b6uj2a1Z2aHu8l0oVffUDoSXs43sE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215849880095-f7he7ult50iuq7nvl9u3idf1k76jhhst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

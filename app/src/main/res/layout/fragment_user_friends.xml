@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_user_friends_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/fragment_user_friends_noResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="No friends"
+        android:textSize="22sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

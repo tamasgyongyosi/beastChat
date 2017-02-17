@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">beastChat</string>
+    <string name="menu_main_create_message_title">New message</string>
+</resources>

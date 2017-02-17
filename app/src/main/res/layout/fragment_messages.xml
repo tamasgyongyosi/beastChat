@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_messages_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_messages_messageLayout"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/fragment_messages_friendPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/fragment_messages_friendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_messages_friendPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Friend Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_messages_messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E1F5FE"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fragment_messages_messageBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:hint="Enter a message"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/fragment_messages_sendArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@mipmap/ic_send_message_"/>
+    </LinearLayout>
+
+</RelativeLayout>
